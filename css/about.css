@@ -79,18 +79,20 @@ b {
 }
 
 .form {
-  background-color: #fdfbf3;
-  padding: 10px;
+  background-color: rgb(253, 251, 243);
+  box-shadow: 1px 2px 5px #777;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 30px;
 }
 
 .form-style-1 {
-  margin: 10px auto;
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   padding: 20px 12px 10px 25px;
 }
 .form-style-1 li {
@@ -105,43 +107,7 @@ b {
   display: block;
   font-weight: bold;
 }
-.form-style-1 input[type="text"],
-.form-style-1 input[type="date"],
-.form-style-1 input[type="datetime"],
-.form-style-1 input[type="number"],
-.form-style-1 input[type="search"],
-.form-style-1 input[type="time"],
-.form-style-1 input[type="url"],
-.form-style-1 input[type="email"],
-textarea,
-select {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  border: 1px solid #bebebe;
-  padding: 7px;
-  margin: 0px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  outline: none;
-}
-.form-style-1 input[type="text"]:focus,
-.form-style-1 input[type="date"]:focus,
-.form-style-1 input[type="datetime"]:focus,
-.form-style-1 input[type="number"]:focus,
-.form-style-1 input[type="search"]:focus,
-.form-style-1 input[type="time"]:focus,
-.form-style-1 input[type="url"]:focus,
-.form-style-1 input[type="email"]:focus,
-.form-style-1 textarea:focus,
-.form-style-1 select:focus {
-  -moz-box-shadow: 0 0 8px #88d5e9;
-  -webkit-box-shadow: 0 0 8px #88d5e9;
-  box-shadow: 0 0 8px #88d5e9;
-  border: 1px solid #88d5e9;
-}
+
 .form-style-1 .field-divided {
   width: 49%;
 }
@@ -178,6 +144,7 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 40px;
 }
 
 .form-head h3 {
@@ -192,6 +159,7 @@ select {
   display: flex;
   align-items: start;
   color: #777;
+  width: 300px;
 }
 .form-checkbox input {
   margin: 4px;
@@ -207,18 +175,18 @@ select {
 }
 
 .form-input input {
-  width: 100%;
+  width: 300px;
   height: 60px;
   font-size: 1.2rem;
   padding: 10px;
   outline: none;
   border: 1px solid gray;
   box-sizing: border-box;
-  border-radius: 5px;
 
   background-color: transparent;
-  border: none;
-  /* border-bottom: 1px solid gray; */
+  border: none !important;
+  outline: none;
+  border-bottom: 1px solid gray !important;
 }
 
 .form-input label {
@@ -238,8 +206,8 @@ select {
 .form-input input:not(:placeholder-shown) + label {
   top: 0;
   font-size: 0.8rem;
-  color: indigo;
-  background: #fff;
+  color: #800000;
+  background: rgb(253, 251, 243);
   padding: 7px;
 }
 

@@ -19,15 +19,15 @@
           </div>
           <div class="menu">
             <div class="logo">
-              <a href="">
+              <a href="/">
                 <img src="../img/logo.png" width="60" height="60px" />
               </a>
             </div>
             <ul>
+              <li><a href="/">Главная</a></li>
               <li><a href="/pages/about.html">О нас</a></li>
-              <li><a href="">Услуги</a></li>
+              <li><a href="/pages/it-outsource.html">Услуги</a></li>
               <li><a href="/pages/price.html">Цены</a></li>
-              <li><a href="">Контакты</a></li>
             </ul>
             <div></div>
           </div>
@@ -185,8 +185,8 @@
               <p>Сборка системного блока — 800 руб.</p>
             </div>
 
-            <input type="radio" name="acor" id="acor8" checked="checked" />
-            <label for="acor8"
+            <input type="radio" name="acor" id="acor7" checked="checked" />
+            <label for="acor7"
               >Работы по настройке локальной сети (без стоимости
               оборудования)</label
             >
@@ -208,7 +208,7 @@
             <h3>Написать нам</h3>
             <img src="../img/logo.png" />
           </div>
-          <ul class="form-style-1">
+          <ul class="form-style-1 form-field-long">
             <li>
               <div class="form-input">
                 <input type="text" placeholder="Email address" id="email" />
@@ -237,28 +237,24 @@
               <input id="myBtn" type="submit" value="Отправить" />
             </li>
           </ul>
-        </form>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Данные отправленны</p>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Данные отправлены</p>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </main>
     <footer></footer>
   </body>
-  <script>
-    var modal = document.getElementById("myModal");
+  <script defer>
+    let modal = document.getElementById("myModal");
+    let btn = document.getElementById("myBtn");
+    let span = document.getElementsByClassName("close")[0];
 
-    var btn = document.getElementById("myBtn");
-
-    var span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function () {
+    btn.onclick = function (e) {
+      e.preventDefault();
       modal.style.display = "block";
     };
 
@@ -267,7 +263,6 @@
     };
 
     window.onclick = function (event) {
-      event.preventDefault();
       if (event.target == modal) {
         modal.style.display = "none";
       }
